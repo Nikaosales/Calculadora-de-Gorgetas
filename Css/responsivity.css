@@ -1,0 +1,48 @@
+@media(min-width:950px){
+    body{
+        justify-content: center;
+        min-height: 100vh;
+        gap: 5.5rem;
+    }
+    header{
+        height: fit-content;
+    }
+    
+    main{
+        display: flex;
+        max-width: 57.5rem;
+        gap: 2rem;
+        border-radius: 25px;
+    }
+
+    form{
+        padding: 1rem;
+
+    }
+
+    .results{
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .distance{
+        margin-bottom: 2.5rem;
+    }
+    
+    form, 
+    .results{
+        max-width: 100%;
+    }
+
+    
+    .results div p:last-child{
+        font-size: 3rem;
+    }
+
+    .tip-amount{
+        margin-bottom: 2.5rem;
+    }
+}

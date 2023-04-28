@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculadora de Gorjetas</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.svg" alt="Logo do Splitter">
+    </header>
+    <main>
+        <form action="">
+            <div class="bill distance" >
+                <label for="bill-input">Bill</label>
+                <div class="input-box">
+                    <img src="./images/icon-dollar.svg" alt="icone da moeda">
+                    <input type="number" id="bill-input" placeholder="0">
+                </div>
+            </div>
+            
+            <div class="tip distance">
+                <label>Select tip %</label>
+                <div class="input-boxes">
+                    <input type="button" value="5%">
+                    <input type="button" value="10%">
+                    <input type="button" value="15%">
+                    <input type="button" value="25%">
+                    <input type="button" value="50%">
+                    <input type="number" id="tip-input" placeholder="custom">
+                </div>
+
+            </div>
+
+            <div class="people distance">
+                <label for="people-input">number of people</label>
+                <div class="input-box">
+                    <img src="./images/icon-person.svg" alt="icone de uma pessoa">
+                    <input type="number" id="people-input" placeholder="0">
+                </div>
+            </div>
+        </form>
+        <section class="results">
+            <div class="Results-values">
+                <div class="tip-amount">
+                    <p>tip-Amount <br> <span> /Person</span></p>
+                    <p id="tip-amount_result">$0.00</p>
+                </div>
+
+                <div class="total">
+                    <p>Total <br> <span>/Person</span></p>
+                    <p id="total_result">$0.00</p>
+                </div>
+            </div>   
+        </section>
+
+
+            <button>Reset</button>
+
+
+        </section>
+    </main>
+</body>
+</html>
