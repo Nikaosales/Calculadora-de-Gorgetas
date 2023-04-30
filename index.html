@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="./Script/Index.js" defer></script>
     <title>Calculadora de Gorjetas</title>
 </head>
 <body>
@@ -16,19 +17,19 @@
                 <label for="bill-input">Bill</label>
                 <div class="input-box">
                     <img src="./images/icon-dollar.svg" alt="icone da moeda">
-                    <input type="number" id="bill-input" placeholder="0">
+                    <input type="number" id="bill-input" placeholder="0" onchange="receberconta()">
                 </div>
             </div>
             
             <div class="tip distance">
                 <label>Select tip %</label>
                 <div class="input-boxes">
-                    <input type="button" value="5%">
-                    <input type="button" value="10%">
-                    <input type="button" value="15%">
-                    <input type="button" value="25%">
-                    <input type="button" value="50%">
-                    <input type="number" id="tip-input" placeholder="custom">
+                    <input type="button" value="5%" onclick="recebergorgeta(5)">
+                    <input type="button" value="10%" onclick="recebergorgeta(10)">
+                    <input type="button" value="15%" onclick="recebergorgeta(15)">
+                    <input type="button" value="25%" onclick="recebergorgeta(25)">
+                    <input type="button" value="50%" onclick="recebergorgeta(50)">
+                    <input type="number" id="tip-input" placeholder="custom" onchange="recebergorgeta()">
                 </div>
 
             </div>
@@ -37,7 +38,7 @@
                 <label for="people-input">number of people</label>
                 <div class="input-box">
                     <img src="./images/icon-person.svg" alt="icone de uma pessoa">
-                    <input type="number" id="people-input" placeholder="0">
+                    <input type="number" id="people-input" placeholder="0" onchange="ReceberNumeroDePessoas()">
                 </div>
             </div>
         </form>
@@ -53,13 +54,15 @@
                     <p id="total_result">$0.00</p>
                 </div>
             </div>   
+        
+
+
+            <button onclick="reset()">Reset</button>
+        
         </section>
 
 
-            <button>Reset</button>
-
-
-        </section>
+        
     </main>
 </body>
 </html>
